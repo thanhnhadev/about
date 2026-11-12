@@ -12,7 +12,7 @@
 
 ## Summary
 
-QA/Automation Engineer and Front-End Developer with **2+ years of combined professional experience** across software testing and web development. Experience includes manual testing at **FPT Play (06/2022–07/2023)** and front-end development at **CSE (06/2016–07/2017)**. Skilled in **Java, Selenium WebDriver, Appium, and TestNG**, as well as **HTML, CSS, JavaScript, and jQuery**. Built a data-driven, Page Object Model (POM) automation framework integrated with Allure and Jira, with additional experience in functional, performance, and API testing. Brings both development and QA perspectives to improve product quality, test coverage, and regression speed.
+IT professional with experience across **software testing, front-end development, and IT Help Desk support**. Tested a residential property management CRM at **Cenvisco (2024–2025)**, using Postman for API testing and JMeter for performance testing, and documenting bugs with screenshots and video reproductions. Previously tested web and mobile applications at **FPT Play** and developed responsive web pages at **CSE**. Currently provide computer troubleshooting and help desk support for departments and agencies in Ho Chi Minh City. Skilled in **Java, Selenium WebDriver, Appium, TestNG, HTML, CSS, JavaScript, and jQuery**, with experience building a data-driven POM automation framework integrated with Allure and Jira.
 
 ---
 
@@ -43,6 +43,21 @@ QA/Automation Engineer and Front-End Developer with **2+ years of combined profe
 ---
 
 ## Experience
+
+### IT Help Desk / Computer Support
+
+**Công ty TNHH Quốc Tế Hoàn Hảo** | 2025 – Present | On-site support for departments and agencies in Ho Chi Minh City
+
+- Provided help desk support to staff across Ho Chi Minh City government departments and agencies.
+- Diagnosed and resolved computer issues to help users resume their work.
+
+### Manual Tester
+
+**Cenvisco** | 2024 – 2025
+
+- Tested a CRM system for managing apartment buildings and residential properties.
+- Used Postman to test APIs and JMeter to perform performance testing.
+- Logged and tracked bugs with clear reproduction details, screenshots, and videos demonstrating the issues.
 
 ### Manual Tester
 
