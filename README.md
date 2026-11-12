@@ -1,6 +1,6 @@
 # Nguyễn Trương Thanh Nhã
 
-**Tester | QA / Automation Engineer**
+**QA / Automation Engineer | Front-End Developer**
 
 **Email:** [thanhnhadev@gmail.com](mailto:thanhnhadev@gmail.com)<br>
 **Phone:** [+84 939 018 814](tel:+84939018814)<br>
@@ -12,7 +12,7 @@
 
 ## Summary
 
-QA/Automation Engineer with approximately **1.5 years of testing experience**, proficient in **Java, Selenium WebDriver, Appium, and TestNG**. Built a data-driven, Page Object Model (POM) automation framework integrated with Allure and Jira. Experienced in functional, performance, and API testing using tools such as JMeter and Postman. Interested in improving test coverage and shortening regression cycles through automation and CI.
+QA/Automation Engineer with approximately **1.5 years of testing experience** and earlier experience as a **Front-End Web Developer at CSE (06/2016–07/2017)**. Skilled in **Java, Selenium WebDriver, Appium, and TestNG** for test automation, as well as **HTML, CSS, JavaScript, and jQuery** for responsive web development. Built a data-driven, Page Object Model (POM) automation framework integrated with Allure and Jira, and experienced in functional, performance, and API testing. Interested in combining development and QA experience to improve product quality, test coverage, and regression speed.
 
 ---
 
