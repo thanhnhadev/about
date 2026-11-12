@@ -12,7 +12,7 @@
 
 ## Summary
 
-QA/Automation Engineer with approximately **1.5 years of testing experience** and earlier experience as a **Front-End Web Developer at CSE (06/2016–07/2017)**. Skilled in **Java, Selenium WebDriver, Appium, and TestNG** for test automation, as well as **HTML, CSS, JavaScript, and jQuery** for responsive web development. Built a data-driven, Page Object Model (POM) automation framework integrated with Allure and Jira, and experienced in functional, performance, and API testing. Interested in combining development and QA experience to improve product quality, test coverage, and regression speed.
+QA/Automation Engineer and Front-End Developer with **2+ years of combined professional experience** across software testing and web development. Experience includes manual testing at **FPT Play (06/2022–07/2023)** and front-end development at **CSE (06/2016–07/2017)**. Skilled in **Java, Selenium WebDriver, Appium, and TestNG**, as well as **HTML, CSS, JavaScript, and jQuery**. Built a data-driven, Page Object Model (POM) automation framework integrated with Allure and Jira, with additional experience in functional, performance, and API testing. Brings both development and QA perspectives to improve product quality, test coverage, and regression speed.
 
 ---
 
