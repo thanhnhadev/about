@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f3">
+  <meta name="description" content="Portfolio and resume of Nguyen Truong Thanh Nha, QA and Software Tester specializing in manual, API, performance, and test automation.">
+  <title>Thanh Nha | QA & Software Tester</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6f7f3;
+      --surface: #ffffff;
+      --ink: #20231f;
+      --muted: #6b716b;
+      --line: #dfe3dc;
+      --green: #c8ef62;
+      --green-dark: #395516;
+      --coral: #e46b52;
+      --blue: #a9d8e6;
+      --mono: "DM Mono", monospace;
+      --sans: "DM Sans", sans-serif;
+      --display: "Space Grotesk", sans-serif;
+      --page: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background-color: var(--paper);
+      background-image: linear-gradient(rgba(32, 35, 31, .035) 1px, transparent 1px), linear-gradient(90deg, rgba(32, 35, 31, .035) 1px, transparent 1px);
+      background-size: 32px 32px;
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    button { font: inherit; }
+    .skip-link { position: absolute; top: -50px; left: 16px; z-index: 20; padding: 10px 16px; background: var(--green); color: var(--ink); }
+    .skip-link:focus { top: 12px; }
+    .shell { width: min(var(--page), calc(100% - 48px)); margin-inline: auto; }
+    .site-header { position: sticky; top: 0; z-index: 10; background: rgba(246, 247, 243, .94); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(32, 35, 31, .1); }
+    .header-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; font-family: var(--display); font-weight: 700; }
+    .brand-mark { width: 35px; height: 35px; display: grid; place-items: center; background: var(--green); border: 1px solid var(--ink); font-family: var(--mono); font-size: 12px; }
+    .desktop-nav { display: flex; align-items: center; gap: 26px; }
+    .desktop-nav a { position: relative; color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 600; transition: color .2s ease; }
+    .desktop-nav a:hover, .desktop-nav a[aria-current="location"] { color: var(--ink); }
+    .desktop-nav a[aria-current="location"]::after { position: absolute; content: ""; bottom: -27px; left: 0; right: 0; height: 3px; background: var(--coral); }
+    .header-actions { display: flex; align-items: center; gap: 10px; }
+    .button { min-height: 42px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 9px 15px; border: 1px solid var(--ink); background: transparent; color: var(--ink); text-decoration: none; font-size: 13px; font-weight: 700; cursor: pointer; transition: transform .18s ease, box-shadow .18s ease, background .18s ease; }
+    .button:hover { transform: translate(-2px, -2px); box-shadow: 3px 3px 0 var(--ink); }
+    .button-primary { background: var(--green); }
+    .button-dark { background: var(--ink); color: white; }
+    .button svg { width: 16px; height: 16px; flex: none; }
+    .menu-toggle { display: none; width: 42px; height: 42px; place-items: center; border: 1px solid var(--ink); background: var(--surface); color: var(--ink); cursor: pointer; }
+
+    main { overflow: clip; }
+    .hero { padding: 70px 0 62px; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.28fr) minmax(300px, .72fr); gap: 56px; align-items: center; }
+    .eyebrow, .section-kicker { display: flex; align-items: center; gap: 10px; color: var(--muted); font: 500 11px/1.4 var(--mono); letter-spacing: 0; text-transform: uppercase; }
+    .eyebrow::before, .section-kicker::before { content: ""; width: 24px; height: 2px; background: var(--coral); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 760px; margin: 20px 0 18px; font: 600 clamp(48px, 6.5vw, 82px)/.98 var(--display); letter-spacing: 0; }
+    h1 span { color: var(--green-dark); }
+    .hero-subtitle { margin-bottom: 20px; font-size: 20px; font-weight: 600; }
+    .hero-copy { max-width: 650px; margin-bottom: 26px; color: #555c55; font-size: 17px; }
+    .hero-copy strong { color: var(--ink); }
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 11px; }
+    .availability { display: inline-flex; align-items: center; gap: 8px; margin-top: 24px; color: var(--muted); font: 400 12px var(--mono); }
+    .availability-dot { width: 8px; height: 8px; border-radius: 50%; background: #64a848; box-shadow: 0 0 0 4px rgba(100, 168, 72, .15); }
+    .profile-panel { position: relative; padding: 20px; background: var(--surface); border: 1px solid var(--ink); box-shadow: 8px 8px 0 var(--ink); }
+    .profile-topline { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 16px; color: var(--muted); font: 400 10px var(--mono); text-transform: uppercase; }
+    .profile-photo-wrap { position: relative; aspect-ratio: 1.12 / 1; overflow: hidden; background: var(--blue); border: 1px solid var(--ink); }
+    .profile-photo-wrap::after { position: absolute; content: ""; inset: auto 0 0; height: 35%; background: linear-gradient(transparent, rgba(20, 33, 30, .32)); pointer-events: none; }
+    .profile-photo { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
+    .avatar-fallback { display: none; width: 100%; height: 100%; place-items: center; color: var(--green-dark); font: 600 90px var(--display); }
+    .profile-label { position: absolute; z-index: 1; left: 14px; bottom: 12px; color: white; font: 400 10px var(--mono); text-transform: uppercase; }
+    .profile-meta { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 16px; }
+    .profile-meta strong { display: block; font: 600 18px var(--display); }
+    .profile-meta span { color: var(--muted); font-size: 12px; }
+    .profile-index { color: var(--coral); font: 500 12px var(--mono); }
+    .metrics { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 56px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); background: rgba(255,255,255,.62); }
+    .metric { padding: 19px 22px; border-right: 1px solid var(--line); }
+    .metric:last-child { border-right: 0; }
+    .metric-value { display: block; font: 600 30px/1.1 var(--display); }
+    .metric-label { display: block; margin-top: 7px; color: var(--muted); font: 400 10px var(--mono); text-transform: uppercase; }
+
+    .section { padding: 76px 0; border-top: 1px solid rgba(32,35,31,.18); }
+    .section-heading { display: grid; grid-template-columns: 220px 1fr; gap: 40px; margin-bottom: 34px; }
+    .section-kicker { margin-top: 9px; }
+    h2 { margin-bottom: 0; font: 600 clamp(32px, 4vw, 48px)/1.05 var(--display); letter-spacing: 0; }
+    .section-intro { max-width: 650px; margin: 12px 0 0; color: var(--muted); }
+    .about-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; }
+    .about-copy { max-width: 660px; color: #4d554d; font-size: 17px; }
+    .about-copy p:last-child { margin-bottom: 0; }
+    .focus-list { display: grid; grid-template-columns: 1fr 1fr; align-content: start; border-top: 1px solid var(--ink); }
+    .focus-item { display: flex; gap: 10px; padding: 14px 10px 14px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+    .focus-item span { color: var(--coral); font: 500 11px var(--mono); }
+
+    .skills-layout { display: grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }
+    .skill-group { grid-column: span 4; min-height: 190px; padding: 21px; background: var(--surface); border: 1px solid var(--line); }
+    .skill-group:nth-child(1) { grid-column: span 5; border-color: var(--ink); box-shadow: 4px 4px 0 var(--green); }
+    .skill-group:nth-child(2) { grid-column: span 4; border-color: var(--ink); }
+    .skill-group:nth-child(3) { grid-column: span 3; background: var(--green); border-color: var(--ink); }
+    .skill-group h3 { margin-bottom: 14px; font: 600 18px var(--display); }
+    .skill-group p { margin: 0; color: #555c55; font-size: 14px; }
+    .skill-group:nth-child(3) p { color: #34441f; }
+    .chip-list { display: flex; flex-wrap: wrap; gap: 7px; }
+    .chip { display: inline-flex; padding: 5px 8px; border: 1px solid #d5dad3; background: #f8f9f6; color: #343a34; font-size: 12px; line-height: 1.3; }
+    .skill-group:nth-child(3) .chip { background: rgba(255,255,255,.58); border-color: rgba(32,35,31,.25); }
+
+    .experience-list { border-top: 1px solid var(--ink); }
+    .experience-item { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 42px; padding: 28px 0 32px; border-bottom: 1px solid var(--line); }
+    .experience-date { padding-top: 5px; color: var(--muted); font: 400 12px var(--mono); }
+    .experience-date .type { display: block; margin-top: 9px; color: var(--coral); font-size: 10px; text-transform: uppercase; }
+    .experience-title-row { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; }
+    .experience-title-row h3 { margin-bottom: 4px; font: 600 23px var(--display); }
+    .company { margin-bottom: 14px; color: var(--muted); font-size: 14px; }
+    .experience-item ul { display: grid; gap: 8px; margin: 0; padding-left: 18px; color: #505750; font-size: 14px; }
+    .experience-item li::marker { color: var(--coral); }
+    .experience-tag { display: inline-block; padding: 4px 8px; background: var(--green); color: #34441f; font: 500 10px var(--mono); text-transform: uppercase; }
+    .additional-experience { margin-top: 32px; }
+    .additional-heading { display: flex; align-items: center; gap: 14px; margin-bottom: 4px; color: var(--muted); font: 400 11px var(--mono); text-transform: uppercase; }
+    .additional-heading::after { height: 1px; flex: 1; content: ""; background: var(--line); }
+    .additional-item { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 42px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+    .additional-item h3 { margin-bottom: 3px; font: 600 19px var(--display); }
+    .additional-item p { margin-bottom: 8px; color: var(--muted); font-size: 13px; }
+    .additional-item ul { margin: 0; padding-left: 18px; color: #505750; font-size: 14px; }
+
+    .education-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; }
+    .education-main { padding: 24px; background: var(--green); border: 1px solid var(--ink); }
+    .education-main .section-kicker { color: #44512e; }
+    .education-main h3 { margin: 22px 0 8px; font: 600 25px/1.15 var(--display); }
+    .education-main p { margin-bottom: 0; color: #44512e; }
+    .cert-list { border-top: 1px solid var(--ink); }
+    .cert-item { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .cert-item strong { display: block; font: 600 16px var(--display); }
+    .cert-item span { color: var(--muted); font-size: 13px; }
+    .cert-item a { align-self: center; color: var(--green-dark); font-size: 12px; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .language-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+    .language { padding: 8px 11px; border: 1px solid var(--line); background: var(--surface); font-size: 13px; }
+    .language strong { margin-right: 6px; }
+
+    .contact-section { padding: 64px 0; background: var(--ink); color: white; }
+    .contact-grid { display: flex; align-items: end; justify-content: space-between; gap: 36px; }
+    .contact-section .section-kicker { color: #b6beb5; }
+    .contact-section h2 { max-width: 660px; margin-top: 15px; }
+    .contact-section p { margin: 15px 0 0; color: #b6beb5; }
+    .contact-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .contact-actions .button { color: var(--ink); background: var(--green); border-color: var(--green); white-space: nowrap; }
+    .contact-actions .button:hover { box-shadow: 3px 3px 0 white; }
+    .site-footer { padding: 19px 0; background: var(--ink); border-top: 1px solid #484e47; color: #b6beb5; font: 400 10px var(--mono); }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
+    .toast { position: fixed; z-index: 30; right: 22px; bottom: 22px; padding: 12px 16px; background: var(--ink); color: white; border: 1px solid white; box-shadow: 4px 4px 0 var(--green); font-size: 13px; opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .2s ease, transform .2s ease; }
+    .toast.show { opacity: 1; transform: translateY(0); }
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 900px) {
+      .desktop-nav { gap: 15px; }
+      .desktop-nav a { font-size: 12px; }
+      .hero-grid { gap: 32px; grid-template-columns: 1.1fr .9fr; }
+      .section-heading { grid-template-columns: 160px 1fr; gap: 24px; }
+      .skill-group, .skill-group:nth-child(1), .skill-group:nth-child(2) { grid-column: span 6; }
+      .skill-group:nth-child(3) { grid-column: span 6; }
+      .about-grid { gap: 32px; }
+    }
+    @media (max-width: 680px) {
+      html { scroll-padding-top: 74px; }
+      .shell { width: min(var(--page), calc(100% - 32px)); }
+      .header-inner { min-height: 66px; }
+      .brand { font-size: 14px; }
+      .header-actions > .button { display: none; }
+      .menu-toggle { display: grid; }
+      .desktop-nav { position: absolute; top: 65px; left: 0; right: 0; display: none; padding: 12px 16px 18px; background: var(--paper); border-bottom: 1px solid var(--ink); }
+      .desktop-nav.open { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+      .desktop-nav a { padding: 12px 6px; border-bottom: 1px solid var(--line); font-size: 14px; }
+      .desktop-nav a[aria-current="location"]::after { bottom: 0; right: auto; width: 24px; }
+      .hero { padding: 38px 0 38px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 30px; }
+      h1 { font-size: clamp(48px, 15vw, 72px); }
+      .hero-subtitle { font-size: 17px; }
+      .hero-copy { font-size: 15px; }
+      .profile-panel { max-width: 420px; }
+      .profile-photo-wrap { aspect-ratio: 1.35 / 1; }
+      .metrics { margin-top: 38px; }
+      .metric { padding: 14px 11px; }
+      .metric-value { font-size: 23px; }
+      .metric-label { font-size: 8px; }
+      .section { padding: 56px 0; }
+      .section-heading { grid-template-columns: 1fr; gap: 14px; margin-bottom: 25px; }
+      .section-kicker { margin-top: 0; }
+      .about-grid, .education-grid { grid-template-columns: 1fr; gap: 28px; }
+      .about-copy { font-size: 15px; }
+      .focus-list { grid-template-columns: 1fr 1fr; }
+      .skill-group, .skill-group:nth-child(1), .skill-group:nth-child(2), .skill-group:nth-child(3) { grid-column: span 12; min-height: auto; }
+      .experience-item, .additional-item { grid-template-columns: 1fr; gap: 8px; padding: 22px 0; }
+      .experience-date { display: flex; justify-content: space-between; padding: 0; }
+      .experience-date .type { margin: 0; }
+      .experience-title-row h3 { font-size: 21px; }
+      .education-grid { gap: 26px; }
+      .contact-grid { display: block; }
+      .contact-actions { margin-top: 24px; }
+      .contact-section { padding: 52px 0; }
+      .footer-inner { display: grid; gap: 6px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+    @media print {
+      body { background: white; font-size: 11pt; }
+      .site-header, .hero-buttons, .contact-section, .site-footer, .toast, .skip-link { display: none !important; }
+      .shell { width: 100%; }
+      .hero, .section { padding: 24px 0; }
+      .reveal { opacity: 1; transform: none; }
+      .profile-panel, .skill-group, .education-main { box-shadow: none; }
+      .section, .experience-item, .additional-item, .cert-item { break-inside: avoid; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Thanh Nha, back to top">
+        <span class="brand-mark">TN</span>
+        <span>Thanh Nha</span>
+      </a>
+      <nav class="desktop-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="button button-primary print-button" type="button" aria-label="Print or save CV as PDF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 8V3h10v5M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z"/><path d="M17 11h.01"/></svg>
+          Print CV
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="shell">
+        <div class="hero-grid">
+          <div class="reveal">
+            <div class="eyebrow">QA / Software Testing <span aria-hidden="true">·</span> Ho Chi Minh City, Vietnam</div>
+            <h1 id="hero-title">Nguyễn Trương<br><span>Thanh Nhã.</span></h1>
+            <p class="hero-subtitle">QA / Software Tester · Manual, API &amp; Performance</p>
+            <p class="hero-copy">I test web, mobile, and CRM products with a practical focus on <strong>clear coverage, reliable releases, and actionable defect reports.</strong> My background spans testing, front-end development, and IT support.</p>
+            <div class="hero-buttons">
+              <a class="button button-dark" href="mailto:thanhnhadev@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m4 7 8 6 8-6"/></svg>
+                Contact me
+              </a>
+              <button class="button copy-email" type="button" data-email="thanhnhadev@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="1"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>
+                Copy email
+              </button>
+            </div>
+            <div class="availability"><span class="availability-dot" aria-hidden="true"></span> Open to QA / Tester opportunities</div>
+          </div>
+          <aside class="profile-panel reveal" aria-label="Profile card">
+            <div class="profile-topline"><span>Candidate profile</span><span>VN · 01</span></div>
+            <div class="profile-photo-wrap">
+              <img class="profile-photo" src="https://github.com/thanhnhadev.png" alt="Profile image for Nguyen Truong Thanh Nha" loading="eager">
+              <div class="avatar-fallback" aria-hidden="true">TN</div>
+              <span class="profile-label">Quality first / Always learning</span>
+            </div>
+            <div class="profile-meta">
+              <div><strong>Thanh Nhã</strong><span>QA &amp; Software Testing</span></div>
+              <span class="profile-index">#QA-01</span>
+            </div>
+          </aside>
+        </div>
+        <div class="metrics reveal" aria-label="Career highlights">
+          <div class="metric"><span class="metric-value">300</span><span class="metric-label">Web &amp; mobile test cases</span></div>
+          <div class="metric"><span class="metric-value">30%</span><span class="metric-label">Faster bug verification</span></div>
+          <div class="metric"><span class="metric-value">4+</span><span class="metric-label">Years combined career experience</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div class="section-kicker">01 / Profile</div>
+          <div><h2 id="about-title">Testing that helps teams ship with confidence.</h2><p class="section-intro">A hands-on tester who can move between product behavior, API checks, performance signals, and clear defect communication.</p></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>My QA experience includes web and mobile applications, as well as a CRM platform for apartment building management. I design and execute test cases, perform regression checks, test APIs with Postman, and use JMeter for performance testing.</p>
+            <p>I document defects with steps to reproduce, screenshots, and video recordings so development teams can investigate efficiently. Earlier front-end and ongoing IT support experience also help me understand user workflows and troubleshoot issues from multiple angles.</p>
+          </div>
+          <div class="focus-list reveal" aria-label="Testing focus areas">
+            <div class="focus-item"><span>01</span> Functional &amp; regression</div>
+            <div class="focus-item"><span>02</span> API testing</div>
+            <div class="focus-item"><span>03</span> Performance testing</div>
+            <div class="focus-item"><span>04</span> Defect reporting</div>
+            <div class="focus-item"><span>05</span> Web &amp; mobile</div>
+            <div class="focus-item"><span>06</span> Automation foundations</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div class="section-kicker">02 / Toolkit</div>
+          <div><h2 id="skills-title">Core skills</h2><p class="section-intro">Testing methods, tools, and engineering foundations used across project work.</p></div>
+        </div>
+        <div class="skills-layout">
+          <article class="skill-group reveal">
+            <h3>Manual, API &amp; Performance</h3>
+            <div class="chip-list"><span class="chip">Functional testing</span><span class="chip">Regression</span><span class="chip">Web &amp; mobile</span><span class="chip">CRM testing</span><span class="chip">Postman</span><span class="chip">JMeter</span><span class="chip">Swagger</span><span class="chip">FastAPI</span><span class="chip">Lighthouse</span><span class="chip">k6</span></div>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Test Design &amp; Methods</h3>
+            <div class="chip-list"><span class="chip">Test case design</span><span class="chip">Black-box</span><span class="chip">White-box</span><span class="chip">Gray-box</span><span class="chip">Defect reporting</span><span class="chip">Screenshots &amp; video</span><span class="chip">Agile / Scrum</span><span class="chip">Waterfall</span></div>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Automation</h3>
+            <div class="chip-list"><span class="chip">Java</span><span class="chip">Selenium</span><span class="chip">TestNG</span><span class="chip">Appium</span><span class="chip">POM</span><span class="chip">Data-driven</span><span class="chip">Allure</span></div>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Tools &amp; Collaboration</h3>
+            <div class="chip-list"><span class="chip">Jira</span><span class="chip">GitHub</span><span class="chip">GitLab</span><span class="chip">SVN</span><span class="chip">Development teams</span><span class="chip">Business analysts</span></div>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Front-End Foundations</h3>
+            <div class="chip-list"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">jQuery</span><span class="chip">React.js</span><span class="chip">API integration</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div class="section-kicker">03 / Work history</div>
+          <div><h2 id="experience-title">Experience</h2><p class="section-intro">QA, product testing, IT support, and front-end development experience, ordered from most recent to earliest.</p></div>
+        </div>
+        <div class="experience-list">
+          <article class="experience-item reveal">
+            <div class="experience-date">2025 – Present<span class="type">IT support</span></div>
+            <div>
+              <div class="experience-title-row"><h3>IT Help Desk / Computer Support</h3><span class="experience-tag">IT support</span></div>
+              <p class="company">Công ty TNHH Quốc Tế Hoàn Hảo · Ho Chi Minh City</p>
+              <ul><li>Provided help desk support and diagnosed computer issues for staff across government departments and agencies in Ho Chi Minh City.</li></ul>
+            </div>
+          </article>
+          <article class="experience-item reveal">
+            <div class="experience-date">2024 – 2025<span class="type">Manual testing</span></div>
+            <div>
+              <div class="experience-title-row"><h3>Manual Tester</h3><span class="experience-tag">CRM · API · Performance</span></div>
+              <p class="company">Cenvisco</p>
+              <ul><li>Tested a CRM system for managing apartment buildings and residential properties.</li><li>Used Postman for API testing and JMeter for performance testing.</li><li>Logged and tracked defects with reproduction details, screenshots, and videos demonstrating the issues.</li></ul>
+            </div>
+          </article>
+          <article class="experience-item reveal">
+            <div class="experience-date">06/2022 – 07/2023<span class="type">Manual testing</span></div>
+            <div>
+              <div class="experience-title-row"><h3>Manual Tester</h3><span class="experience-tag">300 test cases</span></div>
+              <p class="company">FPT Play</p>
+              <ul><li>Designed and executed <strong>300 web and mobile test cases</strong>, including regression testing before releases.</li><li>Reduced bug verification time by <strong>30%</strong> through clear reproduction steps and logs.</li><li>Worked with developers and business analysts to investigate issues and support product quality.</li></ul>
+            </div>
+          </article>
+          <article class="experience-item reveal">
+            <div class="experience-date">06/2016 – 07/2017<span class="type">Web development</span></div>
+            <div>
+              <div class="experience-title-row"><h3>Front-End Web Developer</h3><span class="experience-tag">Web development</span></div>
+              <p class="company">CSE</p>
+              <ul><li>Developed responsive pages with HTML, CSS, JavaScript, and jQuery; integrated UI with backend APIs and collaborated with designers on cross-browser features.</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div class="section-kicker">04 / Learning</div>
+          <div><h2 id="education-title">Education &amp; certifications</h2><p class="section-intro">Formal education and focused training in software testing, automation, and web development.</p></div>
+        </div>
+        <div class="education-grid">
+          <div class="education-main reveal">
+            <div class="section-kicker">Education</div>
+            <h3>Ho Chi Minh City University of Technology</h3>
+            <p>Graduated 2021</p>
+          </div>
+          <div class="cert-list reveal">
+            <div class="cert-item"><div><strong>Fullstack Tester</strong><span>CyberSoft Academy · 07/2025 · Manual &amp; automation testing, bug tracking, CI/CD</span></div><a href="https://bit.ly/Tester_Professional" target="_blank" rel="noreferrer">View credential ↗</a></div>
+            <div class="cert-item"><div><strong>Generative AI for Tester</strong><span>CodeStart · 06/2025 · AI-assisted test cases, execution, and reporting</span></div><a href="https://bit.ly/Gen_Ai_For_Tester" target="_blank" rel="noreferrer">View credential ↗</a></div>
+            <div class="cert-item"><div><strong>Selenium Advanced</strong><span>AnhTester · 12/2023 · Selenium WebDriver, waits, POM, parallel runs</span></div><a href="https://bit.ly/thanhnha_selenium" target="_blank" rel="noreferrer">View credential ↗</a></div>
+            <div class="cert-item"><div><strong>Professional React Developer</strong><span>FPT Software Academy · 07/2022 · React.js, state management, project practice</span></div><a href="https://bit.ly/thanhnha_reactjs" target="_blank" rel="noreferrer">View credential ↗</a></div>
+          </div>
+        </div>
+        <div class="language-row reveal" aria-label="Languages">
+          <span class="language"><strong>Vietnamese</strong> Fluent</span>
+          <span class="language"><strong>English</strong> Intermediate (B1)</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="shell contact-grid">
+        <div class="reveal"><div class="section-kicker">05 / Contact</div><h2 id="contact-title">Let’s talk about your next QA challenge.</h2><p>Open to QA / Tester opportunities in Ho Chi Minh City and beyond.</p></div>
+        <div class="contact-actions reveal">
+          <a class="button" href="mailto:thanhnhadev@gmail.com">Email me</a>
+          <a class="button" href="https://www.linkedin.com/in/nguyentruongthanhnha/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a class="button" href="tel:+84939018814">Call</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><span>© <span id="current-year">2026</span> Nguyễn Trương Thanh Nhã</span><span>QA / SOFTWARE TESTING · HO CHI MINH CITY</span></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const menuToggle = document.querySelector("#menu-toggle");
+    const navigation = document.querySelector("#site-nav");
+    const toast = document.querySelector("#toast");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", String(!isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
+      navigation.classList.toggle("open", !isOpen);
+    });
+
+    navigation.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navigation.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation");
+      });
+    });
+
+    document.querySelectorAll(".print-button").forEach((button) => {
+      button.addEventListener("click", () => window.print());
+    });
+
+    document.querySelector(".copy-email").addEventListener("click", async (event) => {
+      const email = event.currentTarget.dataset.email;
+      try {
+        await navigator.clipboard.writeText(email);
+        toast.textContent = "Email copied to clipboard";
+      } catch {
+        toast.textContent = email;
+      }
+      toast.classList.add("show");
+      window.setTimeout(() => toast.classList.remove("show"), 2400);
+    });
+
+    document.querySelector("#current-year").textContent = new Date().getFullYear();
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        navigation.querySelectorAll("a").forEach((link) => {
+          if (link.hash === `#${entry.target.id}`) link.setAttribute("aria-current", "location");
+          else link.removeAttribute("aria-current");
+        });
+      });
+    }, { rootMargin: "-35% 0px -55% 0px" });
+    document.querySelectorAll("main section[id]").forEach((section) => sectionObserver.observe(section));
+
+    document.querySelector(".profile-photo").addEventListener("error", (event) => {
+      event.currentTarget.style.display = "none";
+      document.querySelector(".avatar-fallback").style.display = "grid";
+    });
+  </script>
+</body>
+</html>
