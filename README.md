@@ -12,7 +12,7 @@
 
 ## Summary
 
-IT professional with experience across **software testing, front-end development, and IT Help Desk support**. Tested a residential property management CRM at **Cenvisco (2024–2025)**, using Postman for API testing and JMeter for performance testing, and documenting bugs with screenshots and video reproductions. Previously tested web and mobile applications at **FPT Play** and developed responsive web pages at **CSE**. Currently provide computer troubleshooting and help desk support for departments and agencies in Ho Chi Minh City. Skilled in **Java, Selenium WebDriver, Appium, TestNG, HTML, CSS, JavaScript, and jQuery**, with experience building a data-driven POM automation framework integrated with Allure and Jira.
+IT professional with **4+ years of combined experience** across software testing, front-end development, and IT Help Desk support. Experienced in manual testing for web, mobile, and CRM systems; API testing with Postman; performance testing with JMeter; and documenting bugs with clear steps, screenshots, and video reproductions. Also experienced in developing responsive web pages and providing computer troubleshooting for departments and agencies in Ho Chi Minh City. Skilled in **Java, Selenium WebDriver, Appium, TestNG, HTML, CSS, JavaScript, and jQuery**, with experience building a data-driven POM automation framework integrated with Allure and Jira.
 
 ---
 
