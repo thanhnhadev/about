@@ -1,6 +1,6 @@
 # Nguyễn Trương Thanh Nhã
 
-**QA / Automation Engineer | Front-End Developer**
+**QA / Software Tester | Manual, API & Performance Testing**
 
 **Email:** [thanhnhadev@gmail.com](mailto:thanhnhadev@gmail.com)<br>
 **Phone:** [+84 939 018 814](tel:+84939018814)<br>
@@ -12,11 +12,18 @@
 
 ## Summary
 
-IT professional with **4+ years of combined experience** across software testing, front-end development, and IT Help Desk support. Experienced in manual testing for web, mobile, and CRM systems; API testing with Postman; performance testing with JMeter; and documenting bugs with clear steps, screenshots, and video reproductions. Also experienced in developing responsive web pages and providing computer troubleshooting for departments and agencies in Ho Chi Minh City. Skilled in **Java, Selenium WebDriver, Appium, TestNG, HTML, CSS, JavaScript, and jQuery**, with experience building a data-driven POM automation framework integrated with Allure and Jira.
+QA/Software Tester with **4+ years of combined professional experience** across software testing, front-end development, and IT support, seeking a Senior Tester opportunity. Experienced in manual testing of web, mobile, and CRM systems, API testing with Postman, performance testing with JMeter, and documenting reproducible defects with clear steps, screenshots, and videos. Designed and executed **300 web and mobile test cases** at FPT Play and helped reduce bug verification time by **30%** through clear defect reports. Also brings automation experience with **Java, Selenium WebDriver, Appium, TestNG, POM, and Allure**, plus front-end development experience with HTML, CSS, JavaScript, and jQuery.
 
 ---
 
 ## Core Skills
+
+### Manual, API & Performance Testing
+
+- Functional, web, mobile, CRM, and regression testing
+- Test case design, execution, and defect reporting with reproduction steps, screenshots, and video
+- JMeter, Swagger, FastAPI, Postman, Lighthouse, k6
+- Black-box, white-box, and gray-box testing
 
 ### Test Automation
 
@@ -24,11 +31,10 @@ IT professional with **4+ years of combined experience** across software testing
 - Page Object Model (POM) and data-driven testing
 - Allure reporting
 
-### Manual, API & Performance Testing
+### Testing Methodologies
 
-- Functional, web, and mobile testing
-- Test case design, execution, and regression testing
-- JMeter, Swagger, FastAPI, Postman, Lighthouse, k6
+- Agile/Scrum: iterative testing, sprint-based test planning, and collaboration with cross-functional teams
+- Waterfall: testing aligned with sequential project phases and defined requirements
 
 ### Tools & Collaboration
 
@@ -42,14 +48,7 @@ IT professional with **4+ years of combined experience** across software testing
 
 ---
 
-## Experience
-
-### IT Help Desk / Computer Support
-
-**Công ty TNHH Quốc Tế Hoàn Hảo** | 2025 – Present | On-site support for departments and agencies in Ho Chi Minh City
-
-- Provided help desk support to staff across Ho Chi Minh City government departments and agencies.
-- Diagnosed and resolved computer issues to help users resume their work.
+## QA & Testing Experience
 
 ### Manual Tester
 
@@ -66,6 +65,15 @@ IT professional with **4+ years of combined experience** across software testing
 - Designed and executed **300 web and mobile test cases**, including regression testing before releases.
 - Improved bug verification efficiency by **30%** through clear reproduction steps and logs.
 - Coordinated with developers and business analysts to investigate issues and support product quality.
+
+## Additional Experience
+
+### IT Help Desk / Computer Support
+
+**Công ty TNHH Quốc Tế Hoàn Hảo** | 2025 – Present | On-site support for departments and agencies in Ho Chi Minh City
+
+- Provided help desk support to staff across Ho Chi Minh City government departments and agencies.
+- Diagnosed and resolved computer issues to help users resume their work.
 
 ### Front-End Web Developer
 
